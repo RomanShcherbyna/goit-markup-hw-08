@@ -1,0 +1,197 @@
+/* Логотип футер */
+.logo__studio-foot {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--white_color_text);
+}
+
+.adress__street {
+    color: var(--white_color_text);
+    margin-bottom: 9px;
+    font-family: 'Roboto';
+    font-style: normal;
+    cursor: default;
+    line-height: 1.71;
+    font-weight: 400;
+}
+
+.contact-footer .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.welcome-footer {
+    margin-bottom: 60px;
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+
+}
+.logo-adress__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*футер */
+.footer {
+    background-color: var(--border_image);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+}
+
+.adress {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+}
+
+.contact-footer__adress-footer {
+    color: var(--mailphone_footer);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Roboto';
+    font-style: normal;
+    cursor: default;
+    line-height: 1.71;
+    font-weight: 400;
+        &:hover, &:focus {
+        color: var(--hover_text_color);
+
+    }
+}
+/* welcome */
+.social-foot__heading {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-style: normal;
+    color: var(--white_color_text);
+}
+
+.socialmedia-foot {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 50px;
+
+}
+
+.socialmedia-foot__element {
+    cursor: pointer;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus, &:active {
+            background-color: var(--hover_text_color);
+                fill: var(--white_color_text);
+            }
+        
+
+}
+
+.socialmedia-foot__site {
+    fill: var(--white_color_text);
+}
+
+.socialmedia-foot .icon:hover {
+    background-color: var(--hover_text_color);
+    fill: var(--white_color_text);
+}
+
+
+.socialmedia-foot__element:last-child {
+    margin-right: 0px;
+}
+// subscribe
+.phone-mail__item .icon {
+    width: 16px;
+    height: 16px;
+}
+
+.footer__block {
+    flex-direction: column;
+        align-items: center;
+}
+
+.subscribe {
+    
+}
+
+.subscribe-to-the-newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.subscribe-to-the-newslette__block {
+    margin-top: 20px;
+        display: flex;        
+            flex-direction: column;
+                align-items: center;
+}
+
+.subscribe-to-the-newsletter .input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--border_image);
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    color: var(--white_color_text);
+}
+
+.subscribe-to-the-newsletter::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.subscribe-to-the-newsletter .button {
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 29px;
+    padding-right: 62px;
+    background-color: var(--hover_text_color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--white_color_text);
+    border: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1px) {
+        margin-top: 20px;
+        
+    }
+
+}
+
+.subscribe-to-the-newsletter .icon {
+    position: absolute;
+    right: 28px;
+    top: 13px;
+    fill: white;
+}
