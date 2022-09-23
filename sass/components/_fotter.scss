@@ -25,12 +25,24 @@
         display: flex;
             flex-direction: column;
             align-items: center;
+        @media screen and (min-width: 768px) {
+            margin-left: auto;
+            
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: auto;
+            align-items: baseline;
+            
+        }
 
 }
 .logo-adress__block {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width:1200px) {
+        align-items: baseline;
+        }
 }
 /*футер */
 .footer {
@@ -48,6 +60,10 @@
             flex-direction: column;
             align-items: center;
             margin-bottom: 60px;
+     @media screen and (min-width:1200px) {
+              align-items: baseline;
+            
+            }
 }
 
 .contact-footer__adress-footer {
@@ -126,6 +142,13 @@
 .footer__block {
     flex-direction: column;
         align-items: center;
+    
+    @media screen and (min-width: 768px)  { 
+        flex-wrap: wrap;
+         align-items: baseline;
+        justify-content: center;
+        flex-direction: row;
+        }
 }
 
 .subscribe {
@@ -136,7 +159,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    @media screen and (min-width:1200px) {
+            align-items: baseline;
+        }
+
 }
 
 .subscribe-to-the-newslette__block {
@@ -144,6 +170,10 @@
         display: flex;        
             flex-direction: column;
                 align-items: center;
+                @media screen and (min-width:1200px) {
+                        align-items: baseline;
+                        flex-direction: row;
+                    }
 }
 
 .subscribe-to-the-newsletter .input {
@@ -155,6 +185,9 @@
     height: 50px;
     padding-left: 16px;
     color: var(--white_color_text);
+    @media screen and (min-width:1200px) {
+           margin-right: 12px;
+        }
 }
 
 .subscribe-to-the-newsletter::placeholder {
@@ -186,7 +219,9 @@
         margin-top: 20px;
         
     }
-
+        @media screen and (min-width:1200px) {
+        margin-top: 0px;
+        }
 }
 
 .subscribe-to-the-newsletter .icon {
