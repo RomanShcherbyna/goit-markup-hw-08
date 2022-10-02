@@ -1377,7 +1377,7 @@ body .what-we-doing__section {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 1px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
