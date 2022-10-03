@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="body">
-    <header class="">
+    <header class="head">
       <!-- Шапка -->
-      <div class="head container">
+      <div class="container header__container">
         <nav class="">
           
           <div class="head__block">
@@ -31,16 +31,7 @@
               ><span class="web-logo">Web</span
               ><span class="head__studio-logo">Studio</span></a
             >
-            <button type="button" class="head__menu-button is-open" aria-expanded="false" data-menu-button>
-              <svg width="40px" height="40" aria-label="Переключатель мобильного меню">
-                <use href="./img/symbol-defs.svg#icon-close_nav-phone" class="head__cross-icon" ></use>
-                <use href="./img/symbol-defs.svg#icon-menu_nav-phone"  class="head__menu-icon"></use>
-              </svg>
-            </button>
-        <div>
-          
-              <div class="">
-              <ul class="site-nav is-open">
+         <ul class="site-nav ">
                 <li class="site-nav__item site-nav__linknow">
                   <a class="site-nav__text site-nav__linknow" href="./index.html">Студия</a>
                 </li>
@@ -51,10 +42,8 @@
                   <a class="site-nav__text" href="">Контакты</a>
                 </li>
               </ul>
-              </div>
-            </div>
-          </nav>
-          <ul class="phone-mail">
+                    </nav>
+                    <ul class="phone-mail">
             <li class="phone-mail__block">
               <a
                 class="phone-mail__item"
@@ -73,20 +62,64 @@
                     <use href="./img/symbol-defs.svg#icon-smartphone"></use>
                   </svg>+ 38 096 111 11 11</a></li>
           </ul>
-          </div>
+             <button type="button" class="head__menu-button" aria-expanded="false" data-menu-open>
+              <svg width="40px" height="40" aria-label="Переключатель мобильного меню">
+                <use href="./img/symbol-defs.svg#icon-close_nav-phone" class="head__cross-icon" ></use>
+              </svg>
+            </button>
+            <div class="mobile-menu" data-menu>
+              <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-button" data-menu-close>
+                  <svg width="40" height="40"><use href="./img/symbol-defs.svg#icon-menu_nav-phone"  class="head__menu-icon"></use></svg>
+                </button>
+                <ul class="mobile__link-list">
+                  <li class="mobile__link-item"><a class="mobile__link" href="">Студия</a></li>
+                  <li class="mobile__link-item"><a class="mobile__link" href="">Портфолио</a></li>
+                  <li class="mobile__link-item"><a class="mobile__link" href="">Контакты</a></li>
+                </ul>
+                 <ul class="">
+            <li class="">
+              <a
+                class="mobile__contact-link"
+                href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              
+            </li>
+            <li class="">
+              <a class="mobile__contact-link" href="tel:+380961111111">
+                + 38 096 111 11 11</a></li>
+          </ul>
+          <ul class="mobile__social-list">
+            <li><a class="mobile__social-link" href="">Instagram</a></li>
+            <li><a class="mobile__social-link" href="">Twitter</a></li>
+            <li><a class="mobile__social-link" href="">Facebook</a></li>
+            <li><a class="mobile__social-link" href="">LinkedIn</a></li>
+          </ul>
+              </div>
+
+            </div>
+            
+              
+            
+            
+         
+          
+          
         </div>
     </header>
     <!--основной контент страницы  -->
     <main>
       <!-- Надпись на фоне -->
-      <section class="hero">
+       <section class="hero">
         <div class="container">
           <h1 class="hero__text">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Особенности -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="hide-text">Особенности</h2>
           <ul class="peculiarity">
@@ -149,9 +182,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- чем мы занимаемся -->
-      <section class="what-we-doing__section section">
+      <!-- <section class="what-we-doing__section section">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="what-we-doing__block disp__flex">
@@ -184,9 +217,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Наша Команда -->
-      <section class="myteam section">
+      <!-- <section class="myteam section">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="disp__flex my-team__section">
@@ -316,9 +349,9 @@
               </div>
             </li>
           </ul>
-        </div>
-      </section>
-      <section class="section">
+        </div> -->
+      <!-- </section> -->
+      <!-- <section class="section">
         <div class="container">
         <h2 class="title">Постоянные клиенты</h2>
         <ul class="client">
@@ -342,9 +375,9 @@
                 </svg> </a></li>
         </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__block disp__flex">
           <div class="logo-adress__block">
               <a class="logo footer-logo" href="./index.html"
@@ -464,10 +497,10 @@
                         </div>
             </form>
         </div>
-         
-    </div>
-  <script src="./js/menu.js"></script>
-    <script src="./js/modal.js">
+          -->
+    <!-- </div> -->
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/modal.js">
       
     </script>
         <script>
@@ -482,7 +515,7 @@
                 e.currentTarget.reset();
             });
         })();
-    </script>
+    </script>  -->
   </body>
   
 </html>

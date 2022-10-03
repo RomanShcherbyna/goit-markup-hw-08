@@ -1,18 +1,24 @@
 
 /* BIG IMAGE */
 .hero {
-    max-width: 1600px;
+    min-height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/Header-mobile.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     justify-content: center;
 }
-
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+        background-image: url('../img/hero/Header-mobile2@\ .jpeg');
+    }
+}
 .hero__text {
     width: 360px;
     margin-left: auto;
