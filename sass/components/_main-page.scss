@@ -362,7 +362,7 @@ body .what-we-doing__section {
     border: 1px solid #AFB1B8;
     align-items: center;
     justify-content: center;
-   margin-right: 30px;
+
    margin-bottom: 30px;
     transition-property: border, fill;
     transition-duration: 250ms;
@@ -394,8 +394,10 @@ body .what-we-doing__section {
     }
    
 }
-.client__element:nth-child(n+5) {
-    margin-bottom: 0px;
+@media screen and (min-width: 768px) {
+    .client__element:nth-child(n+5) {
+        margin-bottom: 0px;
+    }
 }
 
 .client__icon {
