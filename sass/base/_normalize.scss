@@ -116,3 +116,43 @@ pos-absolute {
     top: 0px;
     left: 0px;
 }
+
+// <picture><source media="(min-width:1200px)"
+// srcset="./images/team/desk/image.jpg 1x, ./images/team/desk/image@2x.jpg 2x"
+// /><source media="(min-width:768px)"
+// srcset="
+//  ./images/team/tablet/image.jpg 1x,
+// ./images/team/tablet/image@2x.jpg 2x "
+//  /><img srcset="
+//  ./images/team/mobile/image.jpg 1x,
+// ./images/team/mobile/image@2x.jpg 2x "
+//  src="./images/team/mobile/image.jpg"
+// width="450"
+// alt="image"
+// loading="lazy"
+// /></picture>
+
+// <section class="section features"><div class="container"><h2 class="section-title">Заголовок секции</h2><ul class="features-set"><li class="features-item">1</li><li class="features-item">2</li><li class="features-item">3</li><li class="features-item">4</li><li class="features-item">5</li><li class="features-item">6</li></ul></div></section>.features-set {
+//     ... @media screen and (min-width: 768px) {
+//         display: flex;
+//         flex-wrap: wrap;
+//         margin-top: -30px;
+//         margin-bottom: -30px;
+//     }
+// }
+
+// .features-item {
+//     ... @media screen and (min-width: 768px) {
+//         flex-basis: calc((100% - 2 * 30px) / 2);
+//     }
+
+//     @media screen and (min-width: 1140px) {
+//         flex-basis: calc((100% - 3 * 30px) / 3);
+//     }
+
+//     &:not(:last-child) {
+//         @media screen and (max-width: 767px) {
+//             margin-bottom: 30px;
+//         }
+//     }
+// }

@@ -351,6 +351,10 @@ header {
 }
 
 /* Логотип верх */
+header {
+  position: relative;
+}
+
 .head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,13 +401,13 @@ header {
 /* навигация шапки */
 @media screen and (max-width: 767px) {
   .site-nav {
-    display: none;
+    display: block;
     position: absolute;
-    bottom: -837px;
-    left: -200px;
-    background-color: yellowgreen;
+    top: 100%;
+    left: 0;
+    background-color: rgb(255, 255, 255);
     height: 796px;
-    width: 480px;
+    width: 100%;
     padding-top: 48px;
     padding-left: 40px;
   }
@@ -420,6 +424,12 @@ header {
 @media screen and (min-width: 1200px) {
   .site-nav {
     margin-left: 92px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .head__menu-button.is-open ~ div .site-nav {
+    display: none;
   }
 }
 
@@ -534,6 +544,19 @@ header {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .phone-mail__item {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 40px;
+  }
+}
 
 .phone-mail .phone-mail__item:hover {
   color: var(--hover_text_color);
@@ -546,6 +569,46 @@ header {
 .phone-mail .icon {
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (max-width: 767px) {
+  .phone-mail .icon {
+    display: none;
+  }
+}
+
+.head__menu-button {
+  position: absolute;
+  right: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.head__menu-button:hover, .head__menu-button:focus {
+  fill: var(--hover_text_color);
+}
+@media screen and (min-width: 768px) {
+  .head__menu-button {
+    display: none;
+  }
+}
+
+.head__menu-button .head__menu-icon {
+  display: none;
+}
+
+.head__menu-button.is-open .head__menu-icon {
+  display: block;
+}
+
+.head__menu-button.is-open .head__cross-icon {
+  display: none;
 }
 
 /* BIG IMAGE */
