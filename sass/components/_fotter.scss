@@ -54,7 +54,13 @@
         margin-bottom: 20px;
     }
 }
+@media screen and (max-width: 1199px) {
+    .footer .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+}
 .adress {
         display: flex;
             flex-direction: column;

@@ -186,21 +186,26 @@
 //           }
 //         }
 // }
-// .site-nav .site-nav__linknow {
-//   color: var(--hover_text_color);
-// }
+.site-nav .site-nav__linknow {
+  color: var(--hover_text_color);
+  position: relative;
+}
 
-// .site-nav__linknow::after {
-//   display: block;
-//   content: "";
-//   height: 4px;
-//   background-color: var(--hover_text_color);
-//   position: absolute;
-//   bottom: 0px;
-//   width: 100%;
-//   position: absolute;
+.site-nav__linknow::after {
+  display: block;
+  content: "";
+  height: 4px;
+  background-color: var(--hover_text_color);
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  position: absolute;
+  @media screen and (min-width:1200px) {
+    bottom: -30px;
+    
+  }
  
-// }
+}
 .site-nav__text {
   color: var(--primary_text_color);
   transition-property: color;
